@@ -12,7 +12,7 @@ class Packet00Login(Packet):
 			usr.sendDataToAllClients(self.getData())
 
 	def getData(self):
-		return "00" + self.username #where this whole thing is pickled
-
+		return "00" + self.username 
+		
 	def getUsername(self):
 		return self.username

@@ -11,5 +11,5 @@ class PacketHandler():
 	def lookupPacket(id):
 		for p in packetTypes:
 			if p.getId() == id:
-				return packetTypes[p]
-		return packetTypes[-1]
+				return Packet.packetTypes[p]
+		return Packet.packetTypes[-1]
